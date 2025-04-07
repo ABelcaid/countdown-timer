@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timer-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.timer-input label {
+    font-weight: bold;
+    color: #555;
+}
+
+.timer-input input {
+    width: 60px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.timer-controls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#start-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#pause-btn {
+    background-color: #FFC107;
+    color: #333;
+}
+
+#reset-btn {
+    background-color: #F44336;
+    color: white;
+}
+
+.timer-controls button:hover {
+    opacity: 0.9;
+}
+
+.timer-display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .timer-input {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .timer-controls {
+        flex-direction: column;
+    }
+}
